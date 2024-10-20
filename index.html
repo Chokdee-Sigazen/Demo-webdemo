@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <div id="particles-js"></div> 
+    <header>
+        <nav>
+            <div class="logo">Portfolio.</div>
+            <ul>
+                <li><a href="" class="nav-link">Home</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./myproject.html" class="nav-link">Project</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class=" home-content" id="home">
+            <div id="text-profile" class="intro-text">
+                <h2>Hello, It's Me</h2>
+                <h1 id="myname">Chokdee Devcommu</h1>
+                <h3>And I'm a <span id="typed" class="typed-text"></span><span id="cursor" class="cursur-mouse"  >.</span></h3>
+                <p>This site create by using <span class="highlight">HTML CSS and JS</span></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <button onclick="AddText()" class="download-cv">Download CV</button>
+            </div>
+            <div class="profile-image" >
+                <img src="./images/me.png" alt="me">
+            </div>
+        </div>
+        
+    </main>
+    <script src="./js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.js loaded');
+        });
+    </script>
+</body>
+</html>
